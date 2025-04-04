@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1160px;
+}
+
+/* Root container for the Experience section */
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  padding: 20px;
+  min-height: 500px; /* Ensures it always takes up some height */
+}
+
+/* Individual job section */
+.job {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for card effect */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover effect for each job card */
+.job:hover {
+  transform: translateY(-5px); /* Slight hover lift effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Title for each job (Company Name and Position) */
+.job h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* Duration of the experience (e.g., OCT. 2024 - FEB. 2025) */
+.duration {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* List style for job responsibilities */
+.job ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Align list items to the left */
+}
+
+/* List item style for responsibilities */
+.job li {
+  font-size: 1rem;
+  margin-bottom: 12px; /* Space between list items */
+}
+
+/* Remove margin for the last list item */
+.job li:last-child {
+  margin-bottom: 0;
+}
+
+/* Heading for sub-sections within a job (like 'Lead Management System') */
+.job h4 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Main Experience Heading */
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px; /* Spacing below the heading */
+  text-transform: uppercase; /* Make the text uppercase */
+  color: var(--text-color);
+}
+
+
+/* Media queries for responsiveness */
+@media (width >= 800px) {
+  .experienceContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .job {
+    max-width: 35%;
+    width: 35%;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2,
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 60px;
+  }
+}
+
+@media (width >= 1400px) {
+  .experienceContainer {
+    .job {
+      max-width: 40%;
+      width: 40%;
+    }
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}

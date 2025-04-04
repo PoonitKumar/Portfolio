@@ -1,0 +1,11 @@
+/* Education.module.css */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+.educationItemHeading {
+  margin-bottom: 15px;
+}
+.educationItemPara {
+  margin-bottom: 10px;
+}
